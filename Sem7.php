@@ -395,6 +395,10 @@ $sumcredits7=$sub7*$l11;
 $sumcredits8=$sub8*$l22;
 $totcredit=$sumcredits1+$sumcredits2+$sumcredits3+$sumcredits4+$sumcredits5+$sumcredits6+$sumcredits7+$sumcredits8;
 $divider=$credits1+$credits2+$credits3+$credits4+$credits5+$credits6+$credits7+$credits8;
+if($divider>0)
+{
 $gpa=$totcredit/$divider;
+
 echo"The Gpa is $gpa";
+}
 ?>

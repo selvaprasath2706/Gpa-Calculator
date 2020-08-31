@@ -1,16 +1,39 @@
-<h1 align="center">Welcome to cgpa calculator</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+        It Sem1 Gpa
+        </title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <meta charset="utf-8">
+ 
+    </head>
+    <div class="container">
+  <!-- Content here -->
+
+    <div class="mainpart">
+<h1 align="center">Welcome to Gpa calculator</h1>
 <h2 align="right"><a href="selvahome.php"/>HOME</a></h2>
-<h3>Enter the following</h3>
-<form method="POST"/>
-choose the grade of Communicative English<select name="sub1">
+<h3 align="center">Feed ur grades</h3>
+<br>
+<div class="containers">
+<form method="POST" />
+Choose the grade of Communicative English
+
+        <select name="sub1" >
 	<option>O</option>
 	<option>A+</option>
         <option>A</option>
         <option>B+</option>
         <option>B</option>
         <option>U</option>
-</select><br><br>
-choose the grade of Mathematics I<select name="sub2">
+</select>
+     <br><br>
+   
+
+     Choose the grade of Mathematics I<select name="sub2">
     <option >O</option>
 	<option>A+</option>
         <option>A</option>
@@ -18,7 +41,7 @@ choose the grade of Mathematics I<select name="sub2">
         <option>B</option>
         <option>U</option>
 </select><br><br>
-choose the grade of Engineering Physics<select name="sub3">
+Choose the grade of Engineering Physics<select name="sub3">
     <option >O</option>
 	<option>A+</option>
         <option>A</option>
@@ -26,7 +49,7 @@ choose the grade of Engineering Physics<select name="sub3">
         <option>B</option>
         <option>U</option>
 </select><br><br>
-choose the grade of Engineering Chemistry<select name="sub4">
+Choose the grade of Engineering Chemistry<select name="sub4">
     <option>O</option>
 	<option>A+</option>
         <option>A</option>
@@ -34,7 +57,7 @@ choose the grade of Engineering Chemistry<select name="sub4">
         <option>B</option>
         <option>U</option>
 </select><br><br>
-choose the grade of Problem Solving Python Programming<select name="sub5">
+Choose the grade of Problem Solving Python Programming<select name="sub5">
     <option >O</option>
 	<option>A+</option>
         <option>A</option>
@@ -42,7 +65,7 @@ choose the grade of Problem Solving Python Programming<select name="sub5">
         <option>B</option>
         <option>U</option>
 </select><br><br>
-choose the grade of Engineering Graphics<select name="sub6">
+Choose the grade of Engineering Graphics<select name="sub6">
     <option >O</option>
 	<option>A+</option>
         <option>A</option>
@@ -50,7 +73,7 @@ choose the grade of Engineering Graphics<select name="sub6">
         <option>B</option>
         <option>U</option>
 </select><br><br>
-choosethe grade of Problem Solving Python Laboratory<select name="lab1">
+Choose the grade of Problem Solving Python Laboratory<select name="lab1">
     <option >O</option>
 	<option>A+</option>
         <option>A</option>
@@ -58,7 +81,7 @@ choosethe grade of Problem Solving Python Laboratory<select name="lab1">
         <option>B</option>
         <option>U</option>
 </select><br><br>
-choose the grade of Physics Chemistry Laboratory<select name="lab2">
+Choose the grade of Physics Chemistry Laboratory<select name="lab2">
     <option> O</option>
 	<option>A+</option>
         <option>A</option>
@@ -66,7 +89,12 @@ choose the grade of Physics Chemistry Laboratory<select name="lab2">
         <option>B</option>
         <option>U</option>
 </select><br><br>
-<input type="submit" name="submit" value="submit"/>
+<input type="submit" class ="button" name="submit" value="submit" align="center" onclick="e.preventDefault"/>
+</div>   
+    </div>
+
+</body>
+<div class="display">
 <?php
     $i=1;
     $no=10;
@@ -385,6 +413,7 @@ else
 {
     $credits8=0;
 }
+
 $sumcredits1=$sub1*$s11;
 $sumcredits2=$sub2*$s22;
 $sumcredits3=$sub3*$s33;
@@ -395,6 +424,18 @@ $sumcredits7=$sub7*$l11;
 $sumcredits8=$sub8*$l22;
 $totcredit=$sumcredits1+$sumcredits2+$sumcredits3+$sumcredits4+$sumcredits5+$sumcredits6+$sumcredits7+$sumcredits8;
 $divider=$credits1+$credits2+$credits3+$credits4+$credits5+$credits6+$credits7+$credits8;
+if($divider>0)
+{
+
 $gpa=$totcredit/$divider;
+echo"<br>";
 echo"The Gpa is $gpa";
+echo"<br>";
+echo "The Credits you have earned is $totcredit";
+}
 ?>
+</div>
+</div>
+
+ 
+</html>

@@ -1,0 +1,50 @@
+style
+*
+{
+   
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.containers
+{
+  
+  height: 500px;
+  width:800px;
+  position: relative;
+  border: 3px solid green;
+}
+.mainpart
+{
+font-family:georgia,garamond,serif;
+line-height: 150%;
+}
+.mainpart form
+{
+    margin-top: 40px;
+color: black;
+margin-left: 100px;
+ 
+}
+.display
+{
+  text-align: center
+}
+
+.button
+{
+    margin-left: 200px;
+    background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  left:50%;
+}
+.button:hover
+{
+  background-color: #4CAF50;  
+}

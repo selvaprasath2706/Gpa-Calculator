@@ -352,7 +352,7 @@ Choose the grade of Physics Chemistry Laboratory (CY8161)<select name="lab2" cla
   $credits1=0;
   }
   //s2
-  if($s22>0)
+  if($s22>0){
       $credits2=4;
   }
   else
@@ -434,6 +434,7 @@ Choose the grade of Physics Chemistry Laboratory (CY8161)<select name="lab2" cla
   echo"<br>";
   echo "The Credits you have earned is $totcredit";
   }
+} 
   ?>
 
 

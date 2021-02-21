@@ -21,8 +21,8 @@
 <div class="text-white pl-5 lead font-weight-normal pr-5 pt-2">
 <p>
   This is a Gpa calculator that calculates the gpa of the Student with the grades provided.
-  This is created this php program based on Anna University R2017 regulation credits.
-  You will get the gpa for the grades entered and the credits earned for the Semester  with which you can be
+  This is created using php based on Anna University R2017 regulation credits.
+  You would obtain the gpa for the grades entered and the credits earned for the Semester with which you will be
   able to caculate cgpa . The sum of all such earnedcredits divided by sum of all credits gives CGPA
 </p>
 <p class="text-center">Select the Semester</p>

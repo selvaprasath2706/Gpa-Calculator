@@ -380,7 +380,7 @@ if($s11>0)
 $credits1=0;
 }
 //s2
-if($s22>0)
+if($s22>0){
     $credits2=3;
 }
 else
@@ -468,6 +468,7 @@ echo"<br>";
 echo"The Gpa is $gpa";
 echo"<br>";
 echo "The Credits you have earned is $totcredit";
+}
 }
 ?>
 

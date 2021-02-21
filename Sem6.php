@@ -1,80 +1,102 @@
-<h1 align="center">Welcome to cgpa calculator</h1>
-<h2 align="right"><a href="selvahome.php"/>HOME</a></h2>
-<h3>Enter the following</h3>
-<form method="POST"/>
-choose the grade of Computational Intelligence<select name="sub1">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>IT Sem 6 Gpa calculator</title>
+  </head>
+  <body style="background-color: #484848">
+
+    <div class="container bg-dark mx-auto" style="width: 80%;">
+      <!-- Content here -->
+<h3 class="text-white bg-dark" style = "font-family:courier,arial,helvetica;text-align: center;"> Gpa calculator For IT Semester 6 </h3>
+<p class="text-right">
+
+<a class="text-light text-right" href="index.php"/>HOME</a>
+</p>
+<form method="POST" class="text-white pl-5 lead font-weight-normal pr-5 pt-2"  id="selva"/>
+Choose the grade of Computational Intelligence (IT8601)<select name="sub1" class="form-control">
 	<option>O</option>
 	<option>A+</option>
         <option>A</option>
         <option>B+</option>
         <option>B</option>
         <option>U</option>
-</select><br><br>
-choose the grade of Object Oriented Analysis and Design<select name="sub2">
+</select>
+choose the grade of Object Oriented Analysis and Design (CS8592)<select name="sub2" class="form-control">
     <option >O</option>
 	<option>A+</option>
         <option>A</option>
         <option>B+</option>
         <option>B</option>
         <option>U</option>
-</select><br><br>
-choose the grade of Mobile Communication<select name="sub3">
+</select>
+Choose the grade of Mobile Communication (IT8602)<select name="sub3" class="form-control">
     <option >O</option>
 	<option>A+</option>
         <option>A</option>
         <option>B+</option>
         <option>B</option>
         <option>U</option>
-</select><br><br>
-choose the grade of Big Data Analaysis<select name="sub4">
+</select>
+choose the grade of Big Data Analaysis (CS8091)<select name="sub4" class="form-control">
     <option>O</option>
 	<option>A+</option>
         <option>A</option>
         <option>B+</option>
         <option>B</option>
         <option>U</option>
-</select><br><br>
-choose the grade of Computer Graphics and Multimedia<select name="sub5">
+</select>
+choose the grade of Computer Graphics and Multimedia (CS8092)<select name="sub5" class="form-control">
     <option >O</option>
 	<option>A+</option>
         <option>A</option>
         <option>B+</option>
         <option>B</option>
         <option>U</option>
-</select><br><br>
-choose the grade of Professional Elective I <select name="sub6">
+</select>
+choose the grade of Professional Elective I <select name="sub6"class="form-control">
     <option >O</option>
 	<option>A+</option>
         <option>A</option>
         <option>B+</option>
         <option>B</option>
         <option>U</option>
-</select><br><br>
-choose the grade of Mobile Application Developement Laboratory<select name="lab1">
+</select>
+choose the grade of Mobile Application Developement Laboratory (CS8662)<select name="lab1"class="form-control">
     <option >O</option>
 	<option>A+</option>
         <option>A</option>
         <option>B+</option>
         <option>B</option>
         <option>U</option>
-</select><br><br>
-choose the grade of Object Oriented Anlaysis and Design Laboratory<select name="lab2">
+</select>
+choose the grade of Object Oriented Anlaysis and Design Laboratory (CS8582)<select name="lab2"class="form-control">
     <option> O</option>
 	<option>A+</option>
         <option>A</option>
         <option>B+</option>
         <option>B</option>
         <option>U</option>
-</select><br><br>
-choose the grade of Mini Project<select name="lab3">
-    <option >O</option>
-	<option>A+</option>
-        <option>A</option>
-        <option>B+</option>
-        <option>B</option>
-        <option>U</option>
-</select><br><br>
-<input type="submit" name="submit" value="submit"/>
+</select>
+choose the grade of Mini Project (IT8611)<select name="lab3" class="form-control">
+    	<option >O</option>
+			<option>A+</option>
+      <option>A</option>
+      <option>B+</option>
+      <option>B</option>
+      <option>U</option>
+</select>
+<div class="text-center pt-3 pb-2">
+  <input type="submit" class="btn btn-primary" name="submit" value="Submit" />
+</div>
+<div class="text-justify  ">
+
 <?php
     $i=1;
     $no=10;
@@ -119,7 +141,7 @@ if(isset($_POST['submit']))
     $l1=$_POST['lab1'];
     $l2=$_POST['lab2'];
     $l3=$_POST['lab3'];
-    
+
     if($s1=='O')
 {
     $s11=10;
@@ -141,7 +163,7 @@ if(isset($_POST['submit']))
     $s55=10;
 }
     if($s6=='O')
-{   
+{
     $s66=10;
 }
     if($l1=='O')
@@ -312,7 +334,7 @@ if($l3=='B')
 if($s1=='U')
 {
     $s11=0;
-    
+
 }
 if($s2=='U')
 {
@@ -352,10 +374,10 @@ if($s11>0)
 {
     $credits1=3;
 }
- else 
-     
+ else
+
 {
-$credits1=0;    
+$credits1=0;
 }
 //s2
 if($s22>0)
@@ -402,7 +424,7 @@ else
 }
 //l1
 if($l11>0)
-    
+
 {
     $credits7=2;
 }
@@ -439,6 +461,30 @@ $sumcredits8=$sub8*$l22;
 $sumcredits9=$sub9*$l33;
 $totcredit=$sumcredits1+$sumcredits2+$sumcredits3+$sumcredits4+$sumcredits5+$sumcredits6+$sumcredits7+$sumcredits8+$sumcredits9;
 $divider=$credits1+$credits2+$credits3+$credits4+$credits5+$credits6+$credits7+$credits8+$credits9;
+if($divider>0)
+{
 $gpa=$totcredit/$divider;
+echo"<br>";
 echo"The Gpa is $gpa";
+echo"<br>";
+echo "The Credits you have earned is $totcredit";
+}
 ?>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</div>
+
+<p class="text-right">
+Selva
+</p>
+
+</div>
+
+</body>
+
+</html>
